@@ -4,7 +4,7 @@ import Pet from "./Pet";
 // ternaries are a lot used in react
 const Results = ({ pets }) => {
   return (
-    <div>
+    <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
       {!pets.length ? (
         <h1>No pets found!</h1>
       ) : (
