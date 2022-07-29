@@ -40,10 +40,10 @@ npm i
 3. Activate [prettier](https://prettier.io/) to format your code.
 
 ```
-npm format
+npm run format
 ```
 
-4. Run the app in developement mode.
+4. Run the app in development mode.
 
 ```
 npm run dev
