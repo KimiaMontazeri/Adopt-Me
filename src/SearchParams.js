@@ -41,9 +41,11 @@ const SearchParams = () => {
           Location
           <input
             id="location"
+            type="text"
             value={location}
             onChange={(e) => setLocation(e.target.value)}
             placeholder="Location"
+            className="w-60 mb-5 block"
           />
         </label>
         <label htmlFor="animal">
@@ -59,6 +61,7 @@ const SearchParams = () => {
               setAnimal(e.target.value);
               setBreed("");
             }}
+            className="w-60 mb-5 block"
           >
             <option />
             {/* the above option is for making sure that nothing is checked at the beginning of rendering */}
@@ -79,6 +82,7 @@ const SearchParams = () => {
             value={breed}
             onChange={(e) => setBreed(e.target.value)}
             onBlur={(e) => setBreed(e.target.value)}
+            className="w-60 mb-5 block disabled:opacity-50"
           >
             <option />
             {breeds.map((breed) => (
@@ -94,6 +98,7 @@ const SearchParams = () => {
             value={theme}
             onChange={(e) => setTheme(e.target.value)}
             onBlur={(e) => setTheme(e.target.value)}
+            className="w-60 mb-5 block"
           >
             <option value="peru">Peru</option>
             <option value="darkblue">Dark Blue</option>
@@ -101,7 +106,9 @@ const SearchParams = () => {
             <option value="mediumorchid">Medium Orchid</option>
           </select>
         </label>
-        <button style={{ backgroundColor: theme }}>Submit</button>
+        <button 
+        className="rounded px-6 py-2 text-white hover:opacity-60 border-none"
+        style={{ backgroundColor: theme }}>Submit</button>
         {/* ^^^ first {} is for code and the other inside it is for object! */}
       </form>
       <Results pets={pets} />
