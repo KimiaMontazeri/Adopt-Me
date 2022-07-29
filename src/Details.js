@@ -37,7 +37,7 @@ class Details extends Component {
     return (
       <div className="details">
         <Carousel images={images} />
-        <div>
+        <div className="flex flex-col justify-center items-center">
           <h1>{name}</h1>
           <h2>{`${animal} — ${breed} — ${city}, ${state}`}</h2>
           <ThemeContext.Consumer>
@@ -45,6 +45,7 @@ class Details extends Component {
               <button
                 onClick={this.toggleModal}
                 style={{ backgroundColor: theme }}
+                className="rounded px-6 py-2 text-white hover:opacity-60 border-none"
               >
                 Adopt {name}
               </button>
@@ -55,9 +56,9 @@ class Details extends Component {
             <Modal>
               <div>
                 <h2>Would you like to adopt {name}?</h2>
-                <div className="buttons">
-                  <a href="https://bit.ly/pet-adopt">Yes</a>
-                  <button onClick={this.toggleModal}>No</button>
+                <div>
+                  <a href="https://bit.ly/pet-adopt" className="rounded px-6 py-2 bg-white hover:opacity-60 border-none">Yes</a>
+                  <button onClick={this.toggleModal} className="rounded px-6 py-2 bg-white hover:opacity-60 border-none">No</button>
                 </div>
               </div>
             </Modal>

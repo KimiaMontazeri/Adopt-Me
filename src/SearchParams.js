@@ -45,7 +45,7 @@ const SearchParams = () => {
             value={location}
             onChange={(e) => setLocation(e.target.value)}
             placeholder="Location"
-            className="w-60 mb-5 block"
+            className="w-60 mb-5 block rounded-lg border-white"
           />
         </label>
         <label htmlFor="animal">
@@ -61,7 +61,7 @@ const SearchParams = () => {
               setAnimal(e.target.value);
               setBreed("");
             }}
-            className="w-60 mb-5 block"
+            className="w-60 mb-5 block rounded-lg border-white"
           >
             <option />
             {/* the above option is for making sure that nothing is checked at the beginning of rendering */}
@@ -82,7 +82,7 @@ const SearchParams = () => {
             value={breed}
             onChange={(e) => setBreed(e.target.value)}
             onBlur={(e) => setBreed(e.target.value)}
-            className="w-60 mb-5 block disabled:opacity-50"
+            className="w-60 mb-5 block disabled:opacity-50 rounded-lg border-white"
           >
             <option />
             {breeds.map((breed) => (
@@ -98,7 +98,7 @@ const SearchParams = () => {
             value={theme}
             onChange={(e) => setTheme(e.target.value)}
             onBlur={(e) => setTheme(e.target.value)}
-            className="w-60 mb-5 block"
+            className="w-60 mb-5 block rounded-lg border-white"
           >
             <option value="peru">Peru</option>
             <option value="darkblue">Dark Blue</option>
