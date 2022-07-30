@@ -5,7 +5,7 @@ import Details from "./Details";
 import ThemeContext from "./ThemeContext";
 
 const App = () => {
-  const theme = useState("");
+  const theme = useState("Medium Orchid");
   return (
     <StrictMode>
       <ThemeContext.Provider value={theme}>
