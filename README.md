@@ -6,11 +6,9 @@
 
 ## 🛠 Built With
 
-- HTML5
 - JavaScript ES6
 - Node.js
 - React
-- React Hooks
 - Parcel - Prettier - ESLint
 - TailwindCSS
 
@@ -49,16 +47,16 @@ npm run format
 npm run dev
 ```
 
-5. Build the app for production in the `build` folder (it will bundle React in production mode for better performance).
+5. Build the app in the `dist` folder.
 
 ```
-npm run build
+npm run start
 ```
 
 ## 👉 Acknowledgments
 
 - [Brian Holt](https://github.com/btholt)
-- FrontEndMaster
+- FrontendMasters
 
 ### Show Your Support
 
